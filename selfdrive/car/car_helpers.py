@@ -217,7 +217,7 @@ def get_car(logcan, sendcan, num_pandas=1):
 
   if candidate is None:
     cloudlog.warning("car doesn't match any fingerprints: %r", fingerprints)
-    candidate = "mock"
+    candidate = "HYUNDAI 5 2022"
     y = threading.Thread(target=crash_log2, args=(fingerprints, car_fw,))
     y.start()
 
